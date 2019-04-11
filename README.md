@@ -20,7 +20,7 @@ For each of the Premium identity disks we find we check if they are unattached -
 
 Done.
 
-Bear in mind, this is talking to Azure, so it can take a while to run through as it seems to average around 10 seconds for Azure to confirm the change.
+Bear in mind, this is talking to Azure, so it can take a while to run through as it seems to average around 10-20 seconds for Azure to confirm the change.
 
 Usage:
 
