@@ -31,7 +31,7 @@ foreach( $RG in $RGs) {
   Write-Host "  Found $($PremiumDisks.Count) PREMIUM Identity Disks" -ForegroundColor Red
   
   If ($PremiumDisks.Count -gt 0) {
-    ForEach ($Disk in $Disks) {
+    ForEach ($Disk in $IdentityDisks) {
     #Only Process disks that are currently set to premium
     If ($Disk.Sku.Name -eq "Premium_LRS") {
       If ($Disk.DiskState -eq "Unattached") {
