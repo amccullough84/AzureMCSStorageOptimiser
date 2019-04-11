@@ -38,7 +38,7 @@ foreach( $RG in $RGs) {
         Write-Host "    Processing Disk: $($Disk.Name)" -ForegroundColor Green
         New-AzDiskUpdateConfig -SkuName Standard_LRS | Update-AzDisk -ResourceGroupName $Disk.ResourceGroupName -DiskName $Disk.Name | Out-Null
       } Else {
-        Write-Host "    Unable to Process Disk: $($Disk.Name) as it is in use." -ForegroundColor Orange
+        Write-Host "    Unable to Process Disk: $($Disk.Name) as it is in use." -ForegroundColor Magenta
       }
     
     }
