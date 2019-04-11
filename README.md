@@ -4,7 +4,7 @@ Script to reduce Azure Storage costs by optimising MCS identity disks
 When deploying a Citrix Machine Catalog in Azure using Premium storage, all disks are configured as Premium_LRS. The identity disk occupies approximately 16MB of data however when using Premium_LRS this is charged by as a 32GB SSD for *each* desktop.
 
 A 32GB Premium_LRS disk costs around $5.50 per month, a 32GB Standard_LRS (HDD) disk costs around $1.70 giving you a 69% cost reduction!
-Run this against 1,000 instances and you just saved $48,000 a year (for the IT Dept Christmas party fund?)
+Based on this, run this against 1,000 MCS instances and you just saved $45,600 a year (for the IT Dept Christmas party fund?).
 
 What the script does:
 
